@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Async web server</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <style>
+    .centered-row {
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <section class="container">
+      <h1>Microservice for downloading files</h1>
+      <div>
+        <p>
+          The archive is created on the fly at the user's request.
+          The archive is not stored on the disk, instead, as it is
+          packed it is immediately sent to the user for downloading.
+        </p>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Links for testing</h2>
+
+      <div class="row">
+        <div class="column"><img src="/static/cats/1.jpg" alt=""></div>
+        <div class="column"><img src="/static/cats/2.jpg" alt=""></div>
+        <div class="column"><img src="/static/cats/3.jpg" alt=""></div>
+      </div>
+      <div class="row centered-row">
+        <h5><a href="/download/cats/" target="_blank" class="button button-outline">Download cats archive</a></h5>
+      </div>
+
+      <div class="row">
+        <div class="column"><img src="/static/dogs/1.jpg" alt=""></div>
+        <div class="column"><img src="/static/dogs/2.jpg" alt=""></div>
+        <div class="column"><img src="/static/dogs/3.jpg" alt=""></div>
+      </div>
+      <div class="row centered-row">
+        <h5><a href="/download/dogs/" target="_blank" class="button button-outline">Download dogs archive</a></h5>
+      </div>
+
+    </section>
+  </div>
+</body>
+</html>
